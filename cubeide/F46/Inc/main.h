@@ -31,7 +31,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
-#include "stm32f4xx_hal.h"
+
 #include "stm32f4xx_ll_tim.h"
 #include "stm32f4xx_ll_usart.h"
 #include "stm32f4xx_ll_rcc.h"
@@ -186,5 +186,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

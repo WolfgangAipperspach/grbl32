@@ -1,22 +1,22 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * File Name          : USART.c
-  * Description        : This file provides code for the configuration
-  *                      of the USART instances.
+  * @file    usart.c
+  * @brief   This file provides code for the configuration
+  *          of the USART instances.
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2022 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
-
+/* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "usart.h"
 
@@ -30,6 +30,13 @@ UART_HandleTypeDef huart5;
 void MX_UART5_Init(void)
 {
 
+  /* USER CODE BEGIN UART5_Init 0 */
+
+  /* USER CODE END UART5_Init 0 */
+
+  /* USER CODE BEGIN UART5_Init 1 */
+
+  /* USER CODE END UART5_Init 1 */
   huart5.Instance = UART5;
   huart5.Init.BaudRate = 115200;
   huart5.Init.WordLength = UART_WORDLENGTH_8B;
@@ -42,23 +49,31 @@ void MX_UART5_Init(void)
   {
     Error_Handler();
   }
+  /* USER CODE BEGIN UART5_Init 2 */
+
+  /* USER CODE END UART5_Init 2 */
 
 }
 /* USART1 init function */
 
 void MX_USART1_UART_Init(void)
 {
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
   LL_USART_InitTypeDef USART_InitStruct = {0};
 
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* Peripheral clock enable */
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_USART1);
-  
+
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
-  /**USART1 GPIO Configuration  
+  /**USART1 GPIO Configuration
   PB6   ------> USART1_TX
-  PB7   ------> USART1_RX 
+  PB7   ------> USART1_RX
   */
   GPIO_InitStruct.Pin = LL_GPIO_PIN_6|LL_GPIO_PIN_7;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
@@ -68,6 +83,9 @@ void MX_USART1_UART_Init(void)
   GPIO_InitStruct.Alternate = LL_GPIO_AF_7;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
   USART_InitStruct.BaudRate = 921600;
   USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
   USART_InitStruct.StopBits = LL_USART_STOPBITS_1;
@@ -78,6 +96,9 @@ void MX_USART1_UART_Init(void)
   LL_USART_Init(USART1, &USART_InitStruct);
   LL_USART_ConfigAsyncMode(USART1);
   LL_USART_Enable(USART1);
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
 
 }
 
@@ -92,14 +113,14 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
   /* USER CODE END UART5_MspInit 0 */
     /* UART5 clock enable */
     __HAL_RCC_UART5_CLK_ENABLE();
-  
+
     __HAL_RCC_GPIOC_CLK_ENABLE();
-    /**UART5 GPIO Configuration    
-    PC12     ------> UART5_TX 
+    /**UART5 GPIO Configuration
+    PC12     ------> UART5_TX
     */
     GPIO_InitStruct.Pin = GPIO_PIN_12;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF8_UART5;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -120,9 +141,9 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   /* USER CODE END UART5_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_UART5_CLK_DISABLE();
-  
-    /**UART5 GPIO Configuration    
-    PC12     ------> UART5_TX 
+
+    /**UART5 GPIO Configuration
+    PC12     ------> UART5_TX
     */
     HAL_GPIO_DeInit(GPIOC, GPIO_PIN_12);
 
@@ -130,10 +151,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 
   /* USER CODE END UART5_MspDeInit 1 */
   }
-} 
+}
 
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

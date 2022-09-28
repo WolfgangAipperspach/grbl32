@@ -3,10 +3,10 @@
   <FileVersion>3.0</FileVersion>
   <Workspace>
     <WorkspaceType>Single-project</WorkspaceType>
-    <WorkspacePath>I:\core32\micro\stm32\GRBL32\cubeide\F46\</WorkspacePath>
+    <WorkspacePath>C:\Users\wolfg\git\grbl32\cubeide\F46\</WorkspacePath>
     <underRoot>true</underRoot>
     <TrustZone>0</TrustZone>
-    <HAL_Driver>C:\Users\tom\STM32Cube\Repository\STM32Cube_FW_F4_V1.25.0</HAL_Driver>
+    <HAL_Driver>C:\Users\wolfg\STM32Cube\Repository\STM32Cube_FW_F4_V1.27.1</HAL_Driver>
     <CMSIS>Drivers/CMSIS</CMSIS>
     <Toolchain>STM32CubeIDE</Toolchain>
     <IocFile>F46.ioc</IocFile>
@@ -14,7 +14,122 @@
       <ProjectName>F46</ProjectName>
       <ProjectNature>C</ProjectNature>
       <Secure/>
-      <filestoremove/>
+      <filestoremove>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c</name>
+        </file>
+        <file>
+          <name>..\Src\f407veg6.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</name>
+        </file>
+        <file>
+          <name>Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c</name>
+        </file>
+        <file>
+          <name>Src/system_stm32f4xx.c</name>
+        </file>
+        <file>
+          <name>Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c</name>
+        </file>
+        <file>
+          <name>gpio.h</name>
+        </file>
+        <file>
+          <name>i2c.h</name>
+        </file>
+        <file>
+          <name>spi.h</name>
+        </file>
+        <file>
+          <name>tim.h</name>
+        </file>
+        <file>
+          <name>usart.h</name>
+        </file>
+        <file>
+          <name>stm32f4xx_it.h</name>
+        </file>
+        <file>
+          <name>stm32_assert.h</name>
+        </file>
+        <file>
+          <name>stm32f4xx_hal_conf.h</name>
+        </file>
+        <file>
+          <name>main.h</name>
+        </file>
+      </filestoremove>
       <sourceEntriesToRemove>
         <sourceEntry/>
       </sourceEntriesToRemove>
@@ -31,7 +146,7 @@
             <memory access="xrw" name="CCMRAM" size="64" start="0x10000000"/>
             <memory access="rx" name="FLASH" size="512" start="0x8000000"/>
           </memories>
-          <startup>C:\Users\tom\STM32Cube\Repository\STM32Cube_FW_F4_V1.25.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f407xx.s</startup>
+          <startup>C:\Users\wolfg\STM32Cube\Repository\STM32Cube_FW_F4_V1.27.1\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f407xx.s</startup>
           <LinkSettings>
             <LinkAdditionalLibs/>
           </LinkSettings>
