@@ -137,7 +137,7 @@ char *Int16ToBin(uint16_t ValIn, char *pStrOut)
 
 //------------------------------------------------------------------------
 void uart_init()
-{
+{	// original: LL_USART_EnableIT_RXNE(USART1);
 	LL_USART_EnableIT_RXNE(USART1);
 
 	/*

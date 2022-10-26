@@ -125,6 +125,12 @@ int main(void)
   /* USER CODE BEGIN 2 */
   timing_init();
   uart_init();
+
+
+
+
+
+
   eeprom_init();
   serial_init();   // Setup serial baud rate and interrupts
   settings_init(); // Load Grbl settings from EEPROM
@@ -153,12 +159,24 @@ int main(void)
 
 
 
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+
+	  // WA_DEBUGGING
+	  //uart_sendstr("WADEBUGGING\r\n");
+
+
+
+
+
 		// Reset system variables.
 		uint8_t prior_state = sys.state;
 		memset(&sys, 0, sizeof(system_t)); // Clear system struct variable.
@@ -197,6 +215,10 @@ int main(void)
 		// Start Grbl main loop. Processes program inputs and executes them.
 		protocol_main_loop();
 
+
+
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -225,7 +247,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 6;
+  RCC_OscInitStruct.PLL.PLLM = 4;
   RCC_OscInitStruct.PLL.PLLN = 168;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
