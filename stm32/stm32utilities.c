@@ -314,6 +314,7 @@ void SPIInit(SPI_HandleTypeDef *HSPI)
 //  SPIWrite(IOC0,SPI_GPINTENB,0xFF); //-- enable interrupts for all bits on B (X,Y,Z,A Pos&Neg pins)
 //  SPIRead(IOC0,SPI_INTCAPB);  //-- read to clear capture port
 
+	// WA COMMENT: this might have to be changed!
 	DisableLimitsINT();	//-- disable initially
 
 	//-- Chip1 ----------------------------------
@@ -446,6 +447,7 @@ uint16_t GetLimitsState()
 	 */
 
 	//EnableLimitsINT();		//-- enable limits interrupt
+
 	return (uActiveLimitsMask);
 }
 
