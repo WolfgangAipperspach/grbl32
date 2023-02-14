@@ -1,0 +1,12 @@
+10:37:00 **** Incremental Build of configuration Debug for project F46 ****
+make all 
+arm-none-eabi-size   F46.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45380	    152	  19124	  64656	   fc90	F46.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy.exe -O ihex "F46.elf" "F46.hex"
+ 
+
+10:37:01 Build Finished. 0 errors, 0 warnings. (took 962ms)
+

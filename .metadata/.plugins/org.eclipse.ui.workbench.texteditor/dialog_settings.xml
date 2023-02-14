@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="STM32F1_6"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="STM32F1_6"/>
+			<item value="STM32_F6"/>
+			<item value="hspi3"/>
+			<item value="hspi"/>
+			<item value="INT_LIMITS"/>
+			<item value="limit"/>
+			<item value="IRQ"/>
+			<item value="interrupt"/>
+			<item value="LL_TIM_CC_DisableChannel"/>
+			<item value="Spindle_Enable"/>
+			<item value="WA"/>
+			<item value="home"/>
+			<item value="SPI"/>
+			<item value="hold"/>
+			<item value="CMD_RESET"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1458"/>
+		<item key="DIALOG_Y_ORIGIN" value="53"/>
+		<item key="DIALOG_WIDTH" value="414"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
