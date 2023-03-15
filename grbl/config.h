@@ -112,8 +112,10 @@
 // #define HOMING_CYCLE_2                         // OPTIONAL: Uncomment and add axes mask to enable
 
 // WA setting:
-#define HOMING_CYCLE_0 ((1<<X_AXIS)|(1<<Y_AXIS))
+//#define HOMING_CYCLE_0 ((1<<X_AXIS)|(1<<Y_AXIS))
 //#define HOMING_CYCLE_1 (1<<X_AXIS)
+#define HOMING_CYCLE_0 (1<<Y_AXIS)
+#define HOMING_CYCLE_1 (1<<X_AXIS)
 
 
 // NOTE: The following are two examples to setup homing for 2-axis machines.
